@@ -8,4 +8,4 @@ args = parser.parse_args()
 
 with open(args.image, "rb") as f:
     response = requests.post(f"{args.url}/predict", files={"file": f})
-    print(response.json())
+    print(response)

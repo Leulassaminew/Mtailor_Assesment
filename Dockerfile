@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 
 
 EXPOSE 8192
-CMD ["dumb-init", "--", "fastapi", "run", "app.py", "--port", "8192"]
+CMD ["dumb-init", "--", "fastapi", "run", "main.py", "--port", "8192"]
