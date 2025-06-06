@@ -5,7 +5,7 @@ model = Classifier(BasicBlock, [2, 2, 2, 2])
 model.load_state_dict(torch.load('pytorch_model_weights.pth', map_location='cpu'))
 model.eval()
 
-dum_input = torch.randn(1,3, 224, 224)
+dum_input = torch.randn(1,3, 224, 224, dtype=torch.float32)
 
 torch.onnx.export(
     model,
