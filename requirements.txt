@@ -1,6 +1,6 @@
 torch
 torchvision
-fastapi
+fastapi[standard]
 uvicorn
 numpy
 pillow
